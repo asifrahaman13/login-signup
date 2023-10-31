@@ -1,0 +1,29 @@
+/* Add custom styles for toast notifications */
+.Toastify__toast {
+    background-color: #333; /* Background color for the toast */
+    color: #fff; /* Text color for the toast */
+    width: 100%; /* Make the toast cover 100% width */
+    border-radius: 0; /* Remove border-radius to make it rectangular */
+    margin-bottom: 1rem; /* Adjust the spacing between toasts as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    animation: slideInDown 0.5s, slideOutUp 0.5s 3s; /* Add entrance and exit animations */
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOutUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
